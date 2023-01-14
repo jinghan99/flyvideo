@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/fragment_video_list.xml" value="0.14944275582573455" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/video_item.xml" value="0.14235055724417425" />
       </map>
     </option>
   </component>
