@@ -35,9 +35,9 @@ class VideoListModel : ViewModel() {
 
     fun search(query: String) {
         val url = if (query.isNotBlank()) {
-            "https://cj.lziapi.com/api.php/provide/vod/?ac=list&wd=$query"
+            "https://cj.lziapi.com/api.php/provide/vod/?ac=detail&wd=$query"
         } else {
-            "https://cj.lziapi.com/api.php/provide/vod/?ac=list"
+            "https://cj.lziapi.com/api.php/provide/vod/?ac=detail"
         }
         searchUrlData.value = url
     }
