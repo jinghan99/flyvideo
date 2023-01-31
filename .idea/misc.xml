@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/drawable/edit_bg.xml" value="0.542" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/drawable/search_button.xml" value="0.1" />
         <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
-        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/fragment_video_list.xml" value="0.14944275582573455" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/fragment_video_list.xml" value="0.25" />
         <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/video_item.xml" value="0.14235055724417425" />
       </map>
     </option>
