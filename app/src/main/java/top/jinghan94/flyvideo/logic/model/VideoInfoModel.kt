@@ -1,5 +1,7 @@
 package top.jinghan94.flyvideo.logic.model
 
+import android.os.Parcelable
+
 data class VideoInfoModel(
     val group_id: Int,
     val type_id: Int,

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
 import android.widget.TextView.OnEditorActionListener
 import android.widget.Toast
-import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -40,6 +39,8 @@ class VideoListFragment : Fragment() {
         val layoutManager = LinearLayoutManager(activity)
         recycleVideoListView.layoutManager = layoutManager
         adapter = VideoAdapter(this, videoListModel.videoList)
+
+
         recycleVideoListView.adapter = adapter
 
 //        监听搜索按钮

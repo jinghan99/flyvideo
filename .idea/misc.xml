@@ -7,7 +7,12 @@
         <entry key="..\:/andriod/FlyVideo/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/andriod/FlyVideo/app/src/main/res/drawable/search_button.xml" value="0.1" />
         <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/activity_main.xml" value="0.14361702127659576" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/activity_video_info.xml" value="0.3555253623188406" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/activity_video_info_actity.xml" value="0.42391304347826086" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/adapter_text_view.xml" value="0.2916666666666667" />
         <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/fragment_video_list.xml" value="0.25" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/text_view.xml" value="0.5494791666666666" />
+        <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/video_info.xml" value="0.42391304347826086" />
         <entry key="..\:/andriod/FlyVideo/app/src/main/res/layout/video_item.xml" value="0.14235055724417425" />
       </map>
     </option>
