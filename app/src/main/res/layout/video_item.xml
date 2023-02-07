@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/videoItemFragment"
     android:layout_width="match_parent"
-    android:layout_height="140dp"
+    android:layout_height="wrap_content"
     android:layout_marginBottom="14dp"
     tools:context=".MainActivity"
     android:orientation="horizontal">
 
 
 <ImageView
+        android:layout_marginLeft="10dp"
         android:id="@+id/videoImage"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:layout_width="95dp"/>
+        android:layout_width="130dp"/>
 
 
     <LinearLayout
@@ -23,20 +24,122 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical"
+        android:layout_marginLeft="12dp"
         >
-        <TextView
-            android:id="@+id/videoName"
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="?android:attr/textColorPrimary"
-            android:textSize="16sp"/>
-        <TextView
-            android:id="@+id/remark"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:maxLines="1"
+                android:id="@+id/videoName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:autoSizeMaxTextSize="22dp"
+                android:autoSizeMinTextSize="13dp"
+                app:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:text="星汉灿烂、预审沧海第一集第一季"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vod_lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国语"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/dimgrey"
+                android:background="@color/gainsboro"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textColor="?android:attr/textColorPrimary"
-            android:textSize="14sp"/>
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:id="@+id/vod_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023"
+                android:textColor="@color/dimgrey"
+                android:maxLines="1"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/vod_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/dimgrey"
+                android:text="剧情,动画,奇幻"
+                android:textSize="14sp"/>
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vod_actor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dimgrey"
+                android:text="主演：沈磊,程玉珠,黄翔宇,王肖兵"
+                android:maxLines="1"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vod_director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="导演：沈乐平"
+                android:textColor="@color/dimgrey"
+                android:maxLines="1"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vod_remarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态：更新至232集"
+                android:textColor="@color/dimgrey"
+                android:maxLines="1"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/play_item"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即播放"/>
 
     </LinearLayout>
 </LinearLayout>

@@ -25,7 +25,13 @@ class VideoAdapter(private val fragment: Fragment, private val videoList: List<V
 
         val videoImage : ImageView = view.findViewById(R.id.videoImage)
         val videoName: TextView = view.findViewById(R.id.videoName)
-        val remark: TextView = view.findViewById(R.id.remark)
+        val vodLang: TextView = view.findViewById(R.id.vod_lang)
+        val vodYear: TextView = view.findViewById(R.id.vod_year)
+        val vodClass: TextView = view.findViewById(R.id.vod_class)
+        val vodActor: TextView = view.findViewById(R.id.vod_actor)
+        val vodDirector: TextView = view.findViewById(R.id.vod_director)
+        val vodRemarks: TextView = view.findViewById(R.id.vod_remarks)
+        val playItem: TextView = view.findViewById(R.id.play_item)
         val videoListFragment: LinearLayout = view.findViewById(R.id.videoItemFragment)
 
     }
@@ -36,16 +42,25 @@ class VideoAdapter(private val fragment: Fragment, private val videoList: List<V
        holder.videoListFragment.setOnClickListener {
            val position = holder.bindingAdapterPosition
            val info = videoList[position]
-           Toast.makeText(parent.context,"you clicked view ${info}", Toast.LENGTH_SHORT).show()
            VideoInfoActivity.actionsStart(MyApplication.context,info)
        }
+        holder.playItem.setOnClickListener {
+            val position = holder.bindingAdapterPosition
+            val info = videoList[position]
+            VideoInfoActivity.actionsStart(MyApplication.context,info)
+        }
         return holder
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val videoInfo = videoList[position]
         holder.videoName.text = videoInfo.vod_name
-        holder.remark.text = videoInfo.vod_remarks
+        holder.vodLang.text = videoInfo.vod_lang
+        holder.vodYear.text = videoInfo.vod_year
+        holder.vodClass.text = videoInfo.vod_class
+        holder.vodActor.text = "主演：" + videoInfo.vod_actor
+        holder.vodDirector.text = "导演：" + videoInfo.vod_director
+        holder.vodRemarks.text = "状态：" + videoInfo.vod_remarks
         Glide.with(fragment).load(videoInfo.vod_pic)
             .placeholder(R.drawable.loading)
             .fallback(R.drawable.loading)

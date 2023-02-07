@@ -1,7 +1,9 @@
 package top.jinghan94.flyvideo.logic.model
 
 import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class VideoInfoModel(
     val group_id: Int,
     val type_id: Int,
@@ -26,6 +28,10 @@ data class VideoInfoModel(
     val vod_down_url: String,
     val vod_duration: String,
     val vod_en: String,
+    val vod_play_url: String,
+    val vod_play_from: String,
+    val vod_play_server: String,
+    val vod_play_note: String,
     val vod_hits: Int,
     val vod_hits_day: Int,
     val vod_hits_month: Int,
@@ -82,4 +88,4 @@ data class VideoInfoModel(
     val vod_weekday: String,
     val vod_writer: String,
     val vod_year: String
-)
+): Parcelable
